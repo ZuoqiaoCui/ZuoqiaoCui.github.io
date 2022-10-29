@@ -285,6 +285,23 @@ $(document).ready(function () {
 
 <pre class="r"><code>library(p8105.datasets)
 data(&quot;ny_noaa&quot;)</code></pre>
+<ol style="list-style-type: decimal">
+<li><p>Tidy data</p></li>
+<li><p>To reduce the size of dataset, in problem 2, I determine to
+select samples from this dataset to solve problem 2, selection standards
+are as followed:</p></li>
+</ol>
+<ul>
+<li>Only focus on data in 2007</li>
+<li>Only focus on days when precipitation, snowfall, snow depth,
+maximium temperature and minimium temperature are not empty.</li>
+<li>Only focus on days when precipitation, snowfall and snow depth are
+not zero.</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>The goal to select this sample is to show tmax vs tmin in 2007 when
+there are precipitation, snowfall and snow depth.</li>
+</ol>
 <pre class="r"><code>ny_noaa = ny_noaa %&gt;% 
   janitor::clean_names() %&gt;% 
   drop_na(prcp) %&gt;% 

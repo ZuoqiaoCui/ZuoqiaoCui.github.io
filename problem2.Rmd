@@ -18,6 +18,14 @@ library(p8105.datasets)
 data("ny_noaa")
 ```
 
+1. Tidy data
+
+2. To reduce the size of dataset, in problem 2, I determine to select samples from this dataset to solve problem 2, selection standards are as followed:
+* Only focus on data in 2007
+* Only focus on days when precipitation, snowfall, snow depth, maximium temperature and minimium temperature are not empty.
+* Only focus on days when precipitation, snowfall and snow depth are not zero.
+
+3. The goal to select this sample is to show tmax vs tmin in 2007 when there are precipitation, snowfall and snow depth.
 ```{r}
 ny_noaa = ny_noaa %>% 
   janitor::clean_names() %>% 
