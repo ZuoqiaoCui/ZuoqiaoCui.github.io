@@ -1,0 +1,91 @@
+---
+title: "My Experience"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: united
+---
+
+## Education 
+
+### Undergraduate
+
+University: Queen Mary University of London
+
+Major: E-commerce Engineering with Law 
+
+Time: 09/2017 ~ 07/2021
+
+### Graduate
+
+University: Columbia University
+
+Major: Biostatistics
+
+Time: 09/2022 ~ 05/2024
+	 
+# Internship
+
+### China Mobile Research Institute 
+
+Time: 07/2020 ~ 09/2020
+
+Position: Research Commissioner Intern
+
+Job description:
+
+* Investigated the communication security requirements of 5G vertical industries including industrial internet, finance, smart transportation, smart healthcare, smart energy and so on
+
+* Made patent analysis for 5G technology business safety requirement report and wrote relevant patent analysis report
+
+* Translated the latest English documents which were related to 5G technical safety
+
+### Beijing Lechun Youpin Trading Co., Ltd   
+
+Time: 09/2020 ~ 12/2020
+
+Position: Product Operation Intern
+
+Job description:
+
+* Be responsible for sorting and analyzing a large amount of daily operation data of TMALL supermarket
+
+* Assisted in the research and analysis regarding strategy, ways to play and trend of TMALL supermarket and Pinduoduo
+
+* Assisted in monitoring the competitive products and splitting play strategy, output the results of our analysis
+
+### Beijing Kuaishou Technology Co., Ltd
+
+Time: 09/2021 ~ 12/2021
+
+Position: Product Operation Intern (Lolliboom)
+
+Job description:
+
+* Analyzed different dimensions of data such as click-through rate as well as volume of use and adjusted operation strategies according to weekly data report.
+
+* Monitored hot spots and arranged positions of different products following popularity.
+
+* Communicated with other companies and wrote cooperation plans to reach strategic cooperation so that our products can be promoted with the help of the popularity of other brands.
+
+* Drew users’ portraits by analyzing dimensions of data in the data report to improve volume of use and output more popular products.
+
+### APe counseling company 
+
+Time: 03/2022 ~ 06/2022
+
+Position: User Growth Intern
+
+Job description:
+
+* Be responsible for physical fission campaigns launched by the Zebra Referral Department
+
+* Campaign planning：Design the campaign rules for each physical fission campaign; Write the planning case of each physical fission campaign;Write the design requirements for promotional materials; Coordinate with supply chain department to select products for each campaign
+
+* Risk control: Write the risk control plan during the campaign preparation period; Monitor all data dimensions during the campaign period, adjust rules and resource-niches to control costs
+
+* Data Review: Output weekly data report of each campaign, including the number of referrals, class purchases, fission rate and other data dimensions; Export the growth cost of $0 class and system class for each period; Based on the weekly data report and cost output of each campaign, adjust the operation strategy and product selection for the next campaign.
+
+* Resource-niche Operation: Configure the resource-niche for each campaign, including but not limited to banner, pop-up window, messageBox, notice, etc.
+
