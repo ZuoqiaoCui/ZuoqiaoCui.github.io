@@ -291,7 +291,8 @@ data(&quot;ny_noaa&quot;)</code></pre>
   drop_na(snow) %&gt;% 
   drop_na(snwd) %&gt;% 
   drop_na(tmax) %&gt;% 
-  drop_na(tmin) </code></pre>
+  drop_na(tmin)  %&gt;% 
+  filter(prcp != 0 &amp; snow != 0 &amp; snwd != 0)</code></pre>
 
 
 

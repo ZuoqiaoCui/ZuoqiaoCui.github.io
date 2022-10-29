@@ -25,6 +25,7 @@ ny_noaa = ny_noaa %>%
   drop_na(snow) %>% 
   drop_na(snwd) %>% 
   drop_na(tmax) %>% 
-  drop_na(tmin) 
+  drop_na(tmin)  %>% 
+  filter(prcp != 0 & snow != 0 & snwd != 0)
 ```
 
