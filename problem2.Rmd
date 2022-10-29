@@ -93,6 +93,11 @@ ny_noaa %>%
 ### Chart C
 
 ```{r}
-
+# Make a plotly barchart to show the number of days when tmax is larger than 0 in each station 
+ny_noaa %>% 
+  filter(tmax > 0) %>% 
+  count(id) %>% 
+  mutate(id = fct_reorder(id, n)) %>% 
+  plot_ly(x = ~id, y = ~n, color = ~id, type = "bar", colors = "viridis")
 ```
 
