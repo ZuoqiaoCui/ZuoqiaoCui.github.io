@@ -90,7 +90,7 @@ ny_noaa %>%
 ```
 
 
-### Chart C
+### The number of days when tmax is larger than 0 in each station 
 
 ```{r}
 # Make a plotly barchart to show the number of days when tmax is larger than 0 in each station 
