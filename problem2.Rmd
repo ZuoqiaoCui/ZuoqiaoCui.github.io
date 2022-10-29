@@ -80,11 +80,15 @@ ny_noaa %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Each station's minimum temperature in November 2007
 
 ```{r}
-
+# Make a plotly boxplot to show each station's minimum temperature in November 2007
+ny_noaa %>% 
+  filter(month == "November") %>% 
+  plot_ly(x = ~id,y = ~tmin, color = ~id,type = "box",colors = "viridis")
 ```
+
 
 ### Chart C
 
