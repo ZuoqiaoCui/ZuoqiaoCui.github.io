@@ -26,6 +26,14 @@ ny_noaa = ny_noaa %>%
   drop_na(snwd) %>% 
   drop_na(tmax) %>% 
   drop_na(tmin)  %>% 
-  filter(prcp != 0 & snow != 0 & snwd != 0)
+  filter(prcp != 0 & snow != 0 & snwd != 0) %>% 
+  # Unify the unit
+  mutate(
+    prcp = prcp/10,
+    # change the unit of precipitation from tenths of mm to mm for later calculation
+    tmax = as.numeric(tmax)/10,
+    tmin = as.numeric(tmin)/10
+    # change the unit of minimum and maximum temperature from tenths of degrees C to degrees C for later calculation
+  )
 ```
 

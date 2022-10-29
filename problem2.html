@@ -292,7 +292,15 @@ data(&quot;ny_noaa&quot;)</code></pre>
   drop_na(snwd) %&gt;% 
   drop_na(tmax) %&gt;% 
   drop_na(tmin)  %&gt;% 
-  filter(prcp != 0 &amp; snow != 0 &amp; snwd != 0)</code></pre>
+  filter(prcp != 0 &amp; snow != 0 &amp; snwd != 0) %&gt;% 
+  # Unify the unit
+  mutate(
+    prcp = prcp/10,
+    # change the unit of precipitation from tenths of mm to mm for later calculation
+    tmax = as.numeric(tmax)/10,
+    tmin = as.numeric(tmin)/10
+    # change the unit of minimum and maximum temperature from tenths of degrees C to degrees C for later calculation
+  )</code></pre>
 
 
 
