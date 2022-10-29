@@ -65,9 +65,15 @@ ny_noaa = ny_noaa %>%
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Tmax vs Tmin in 2007
 
 ```{r}
+# Make a plotly scatterplot
+ny_noaa %>%
+  mutate(text_label = str_c("Station id: ", id, "\nMonth: ", month,"\nDay:", day,"\nPrecipitation: ", prcp,"mm","\nSnowfall: ", snow,"mm","\nSnow Depth:", snwd,"mm")) %>% 
+  plot_ly(
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+    color = ~prcp, text = ~text_label, alpha = 0.5)
 
 ```
 
