@@ -17,3 +17,14 @@ library(dplyr)
 library(p8105.datasets)
 data("ny_noaa")
 ```
+
+```{r}
+ny_noaa = ny_noaa %>% 
+  janitor::clean_names() %>% 
+  drop_na(prcp) %>% 
+  drop_na(snow) %>% 
+  drop_na(snwd) %>% 
+  drop_na(tmax) %>% 
+  drop_na(tmin) 
+```
+
