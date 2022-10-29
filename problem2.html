@@ -300,7 +300,23 @@ data(&quot;ny_noaa&quot;)</code></pre>
     tmax = as.numeric(tmax)/10,
     tmin = as.numeric(tmin)/10
     # change the unit of minimum and maximum temperature from tenths of degrees C to degrees C for later calculation
-  )</code></pre>
+  ) %&gt;%  #Separate date into year, month, day
+  separate(date,into = c(&quot;year&quot;,&quot;month&quot;,&quot;day&quot;),sep = &quot;-&quot;) %&gt;% 
+  mutate(
+     month = recode(month, &quot;01&quot; = &quot;January&quot;,
+                  &quot;02&quot; = &quot;February&quot;,
+                  &quot;03&quot; = &quot;March&quot;,
+                  &quot;04&quot; = &quot;April&quot;,
+                  &quot;05&quot; = &quot;May&quot;,
+                  &quot;06&quot; = &quot;June&quot;,
+                  &quot;07&quot; = &quot;July&quot;,
+                  &quot;08&quot; = &quot;Augest&quot;,
+                  &quot;09&quot; = &quot;September&quot;,
+                  &quot;10&quot; = &quot;October&quot;,
+                  &quot;11&quot; = &quot;November&quot;, 
+                  &quot;12&quot; = &quot;December&quot;
+                  )
+     )</code></pre>
 
 
 

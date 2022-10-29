@@ -34,6 +34,22 @@ ny_noaa = ny_noaa %>%
     tmax = as.numeric(tmax)/10,
     tmin = as.numeric(tmin)/10
     # change the unit of minimum and maximum temperature from tenths of degrees C to degrees C for later calculation
-  )
+  ) %>%  #Separate date into year, month, day
+  separate(date,into = c("year","month","day"),sep = "-") %>% 
+  mutate(
+     month = recode(month, "01" = "January",
+                  "02" = "February",
+                  "03" = "March",
+                  "04" = "April",
+                  "05" = "May",
+                  "06" = "June",
+                  "07" = "July",
+                  "08" = "Augest",
+                  "09" = "September",
+                  "10" = "October",
+                  "11" = "November", 
+                  "12" = "December"
+                  )
+     )
 ```
 
