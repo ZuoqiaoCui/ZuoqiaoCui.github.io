@@ -50,6 +50,7 @@ ny_noaa = ny_noaa %>%
                   "11" = "November", 
                   "12" = "December"
                   )
-     )
+     )  %>% 
+  filter(year == 2007)
 ```
 
