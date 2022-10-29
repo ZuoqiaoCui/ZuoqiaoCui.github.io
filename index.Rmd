@@ -25,3 +25,9 @@ I like lovely toys and this is a link I always use to buy toys
 * [rement](https://www.plazajapan.com/toys/re-ment/)
 
 Here are some pictures of my toys
+
+## Problem 2 Solution
+
+This is a link to problem 2 solution:
+
+* [problem 2 solution](problem2.html)
