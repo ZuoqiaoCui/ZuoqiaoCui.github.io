@@ -21,8 +21,12 @@ data("ny_noaa")
 Description of the sample dataset:
 
 To reduce the size of dataset, in problem 2, I determine to select samples from this dataset to solve problem 2, selection standards are as followed:
+
 * Only focus on data in 2007
-* Only focus on days when precipitation, snowfall, snow depth, maximium temperature and minimium temperature are not empty.
+
+* Only focus on days when precipitation, snowfall, snow depth, maximium temperature and
+minimium temperature are not empty.
+
 * Only focus on days when precipitation, snowfall and snow depth are not zero.
 
 ```{r}
