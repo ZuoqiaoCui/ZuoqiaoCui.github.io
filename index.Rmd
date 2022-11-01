@@ -13,7 +13,7 @@ In this website, you can learn about a girl named Zuoqiao Cui
 
 ## My photo
 
-<img src = "images/introductionphoto.jpg" style=" width: 10% text-align:center">
+<img src = "images/introductionphoto.png" style=" width: 10% text-align:center">
 
 
 This photo was taken by my roommate in shop on September 25th, 2022
@@ -28,4 +28,4 @@ I like lovely toys and this is a link I always use to buy toys
 
 This is a link to problem 2 solution:
 
-* [Dashboard](problem2.html)
+* [Flexdashboard](problem2.html)
