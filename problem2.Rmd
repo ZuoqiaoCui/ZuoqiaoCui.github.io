@@ -25,7 +25,6 @@ Description of the sample dataset:
 * Only focus on days when precipitation, snowfall, snow depth, maximium temperature and minimium temperature are not empty.
 * Only focus on days when precipitation, snowfall and snow depth are not zero.
 
-2. The goal to select this sample is to show tmax vs tmin in 2007 when there are precipitation, snowfall and snow depth.
 ```{r}
 # 1. Tidy data
 ny_noaa = ny_noaa %>% 
@@ -70,6 +69,7 @@ Column {data-width=650}
 
 ```{r}
 # Make a plotly scatterplot
+# The goal of this plotly scatterplot is to show tmax vs tmin in 2007 when there are precipitation, snowfall and snow depth.
 ny_noaa %>%
   mutate(text_label = str_c("Station id: ", id, "\nMonth: ", month,"\nDay:", day,"\nPrecipitation: ", prcp,"mm","\nSnowfall: ", snow,"mm","\nSnow Depth:", snwd,"mm")) %>% 
   plot_ly(
