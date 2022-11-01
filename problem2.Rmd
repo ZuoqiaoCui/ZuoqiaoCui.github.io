@@ -5,6 +5,14 @@ output:
     orientation: columns
     vertical_layout: fill
 ---
+<style type="text/css">
+
+h1.title {
+  font-size: 38px;
+  color: Blue;
+  text-align: center;
+}
+</style>
 
 ```{r setup, include=FALSE}
 library(flexdashboard)

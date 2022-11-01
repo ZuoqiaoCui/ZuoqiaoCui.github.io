@@ -6,8 +6,17 @@ output:
     toc_float: true
     theme: united
 ---
+<style type="text/css">
 
-# Education 
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+  text-align: center;
+}
+</style>
+
+
+## Education 
 
 ### Undergraduate
 
@@ -25,7 +34,7 @@ Major: Biostatistics
 
 Time: 09/2022 ~ 05/2024
 
-# Academic Experience
+## Academic Experience
 
 ### Robot guide dogs sales websites
 
@@ -63,7 +72,7 @@ Description:
 
 * Developed an admin interface for administrators to manage the number of bookable resources due to rules of social distancing resulting from Covid-19.
 	 
-# Professional Experience
+## Professional Experience
 
 ### China Mobile Research Institute 
 

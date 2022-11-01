@@ -7,6 +7,15 @@ output:
     theme: united
 ---
 
+<style type="text/css">
+
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+  text-align: center;
+}
+</style>
+
 ## Brief Introduction
 
 In this website, you can learn about a girl named Zuoqiao Cui
