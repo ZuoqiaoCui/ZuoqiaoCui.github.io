@@ -30,4 +30,4 @@ Here are some pictures of my toys
 
 This is a link to problem 2 solution:
 
-* [problem 2 solution](problem2.html)
+* [Dashboard](problem2.html)
