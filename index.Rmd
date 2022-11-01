@@ -24,8 +24,8 @@ I like lovely toys and this is a link I always use to buy toys
 
 * [rement](https://www.plazajapan.com/toys/re-ment/)
 
-## Problem 2 Solution
+## Flexdashboard
 
-This is a link to problem 2 solution:
+This is a link to the solution of problem 2 :
 
 * [Flexdashboard](problem2.html)
