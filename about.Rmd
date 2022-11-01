@@ -7,7 +7,7 @@ output:
     theme: united
 ---
 
-## Education 
+# Education 
 
 ### Undergraduate
 
@@ -24,8 +24,46 @@ University: Columbia University
 Major: Biostatistics
 
 Time: 09/2022 ~ 05/2024
+
+# Academic Experience
+
+### Robot guide dogs sales websites
+
+Time: 06/2019 ~ 09/2019
+
+Description:
+
+1. Make some kinds of robot guide dogs 
+
+2. Develop a sales website to sell them online
+
+*  Use HTML to define the content of a web page and introduced CSS to specify the layout of the web page.
+
+* Use JavaScript to achieve the web browsing behavior. 
+
+* Use relational database to store information about users and products
+
+* Insert Java code into HTML pages to connect database and front page through employing JSP to access the database and create web pages dynamically.
+
+### Covid-19 aware resources booking system in a university
+
+Undergraduate project (Java, MySQL, HTML)
+
+Time:11/2020 ~ 05/2021
+
+Description:
+
+* Followed some steps of Agile approach to develop this project
+
+* Applied Layui framework to develop the front-end of resources booking websites 
+
+* Used Spring Boot framework to develop the back-end of the smart phone app for resources booking as well as websites
+
+* Manipulated database using MySQL to store, modified or deleted relevant data
+
+* Developed an admin interface for administrators to manage the number of bookable resources due to rules of social distancing resulting from Covid-19.
 	 
-# Internship
+# Professional Experience
 
 ### China Mobile Research Institute 
 
