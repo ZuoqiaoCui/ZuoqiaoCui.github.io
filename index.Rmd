@@ -27,6 +27,12 @@ I like lovely toys and this is a website that I always use to buy toys from
 
 * [rement](https://www.plazajapan.com/toys/re-ment/)
 
+## My Experience
+
+This is a link to my academic and professional experience, if you want to learn more about me, click it :
+
+* [About me](about.html)
+
 ## Flexdashboard
 
 This is a link to the solution of problem 2 :
