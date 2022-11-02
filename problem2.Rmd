@@ -97,7 +97,7 @@ ny_noaa %>%
 ```
 
 
-### The number of days when tmax is larger than 0 in each station when precipitation, snowfall and snow depth aren't zero
+### The number of days when tmax is larger than 0 in each station and precipitation, snowfall as well as snow depth aren't zero
 
 ```{r}
 # Make a plotly barchart to show the number of days when tmax is larger than 0 in each station when precipitation, snowfall and snow depth aren't zero
