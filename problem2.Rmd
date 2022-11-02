@@ -42,8 +42,8 @@ ny_noaa = ny_noaa %>%
   # Unify the unit
   mutate(
     prcp = prcp/10,
-    # change the unit of snowfall from inch to mm
-    snow = snow * 25.4,
+    # change the unit of snowfall
+    snow = snow/25.4,
     # change the unit of precipitation from tenths of mm to mm for later calculation
     tmax = as.numeric(tmax)/10,
     tmin = as.numeric(tmin)/10
@@ -77,7 +77,7 @@ Column {data-width=550}
 # Make a plotly scatterplot
 # The goal of this plotly scatterplot is to show tmax vs tmin in 2007 when precipitation, snowfall and snow depth aren not zero.
 ny_noaa %>%
-  mutate(text_label = str_c("Station id: ", id, "\nMonth: ", month,"\nDay:", day,"\nPrecipitation: ", prcp,"mm","\nSnowfall: ", snow,"mm","\nSnow Depth:", snwd,"mm")) %>% 
+  mutate(text_label = str_c("Station id: ", id, "\nMonth: ", month,"\nDay:", day,"\nPrecipitation: ", prcp,"mm","\nSnowfall: ", snow,"inch","\nSnow Depth:", snwd,"mm")) %>% 
   plot_ly(
     x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
     color = ~prcp, text = ~text_label, alpha = 0.5)
