@@ -42,6 +42,8 @@ ny_noaa = ny_noaa %>%
   # Unify the unit
   mutate(
     prcp = prcp/10,
+    # change the unit of snowfall from inch to mm
+    snow = snow * 25.4,
     # change the unit of precipitation from tenths of mm to mm for later calculation
     tmax = as.numeric(tmax)/10,
     tmin = as.numeric(tmin)/10
@@ -69,11 +71,11 @@ ny_noaa = ny_noaa %>%
 Column {data-width=550}
 -----------------------------------------------------------------------
 
-### Tmax vs Tmin in 2007
+### Tmax vs Tmin in 2007 when precipitation, snowfall and snow depth aren't zero
 
 ```{r}
 # Make a plotly scatterplot
-# The goal of this plotly scatterplot is to show tmax vs tmin in 2007 when there are precipitation, snowfall and snow depth.
+# The goal of this plotly scatterplot is to show tmax vs tmin in 2007 when precipitation, snowfall and snow depth aren not zero.
 ny_noaa %>%
   mutate(text_label = str_c("Station id: ", id, "\nMonth: ", month,"\nDay:", day,"\nPrecipitation: ", prcp,"mm","\nSnowfall: ", snow,"mm","\nSnow Depth:", snwd,"mm")) %>% 
   plot_ly(
@@ -85,20 +87,20 @@ ny_noaa %>%
 Column {data-width=450}
 -----------------------------------------------------------------------
 
-### Each station's minimum temperature in November 2007
+### Each station's minimum temperature in November 2007 when precipitation, snowfall and snow depth aren't zero
 
 ```{r}
-# Make a plotly boxplot to show each station's minimum temperature in November 2007
+# Make a plotly boxplot to show each station's minimum temperature in November 2007 when there are precipitation, snowfall and snow depth
 ny_noaa %>% 
   filter(month == "November") %>% 
   plot_ly(x = ~id,y = ~tmin, color = ~id,type = "box",colors = "viridis")
 ```
 
 
-### The number of days when tmax is larger than 0 in each station 
+### The number of days when tmax is larger than 0 in each station when precipitation, snowfall and snow depth aren't zero
 
 ```{r}
-# Make a plotly barchart to show the number of days when tmax is larger than 0 in each station 
+# Make a plotly barchart to show the number of days when tmax is larger than 0 in each station when precipitation, snowfall and snow depth aren't zero
 ny_noaa %>% 
   filter(tmax > 0) %>% 
   count(id) %>% 
